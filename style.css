@@ -1,0 +1,117 @@
+*{
+    font-family: "Rimouski";
+    color: #383838;
+}
+
+body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.app-title p{
+    text-align: left;
+    padding: 15px;
+    font-style: bold;
+    margin: 0 auto;
+    font-size: 2.9em;
+    color:rgb(112, 112, 112);
+   
+}
+.container {
+    text-align: center;
+    width: 80%;
+    height: 300px;
+    background: whitesmoke;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  .two {
+    width: 20%;
+    height: 300px;
+    background: white;
+    float: left;
+    border-radius: 20px;
+  }
+  
+  .one {
+      
+    margin-left: 15%;
+    height: 300px;
+    background: whitesmoke;
+    border-radius: 20px;
+  }
+
+
+.bpm{
+    text-align: center;
+    height:60px;
+}
+
+.bpm p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.bpm span{
+    color: #293251;
+    font-size: 0.5em;
+    padding: 10%
+}
+
+
+.songTitle p{
+   padding-top: 65%;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.artistName p{
+    margin: 0;
+    padding: 10px;
+    color: #293251;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.copyright{
+
+    padding-left: 80%;
+    color: gray;
+    font-family: Arial, sans-serif;
+}
+input[type=text] {
+    padding: 10px;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 16px;
+    width: 50%;
+
+  }
+  
+  .advancedSearchTextbox {
+    width: 526px;
+    margin-right: -4px;
+  }
+  .advancedSearchTextbox2 {
+    width: 526px;
+    margin-right: -4px;
+  }
+.space{ 
+    height: 10%;
+}
