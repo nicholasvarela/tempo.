@@ -33,7 +33,7 @@ const key = "f11886fda303a0f198969af182c18730";
 getFirstSong()
 
 function getFirstSong(){
-    let api = 'https://thingproxy.freeboard.io/fetch/http://api.getsongbpm.com/song/?api_key='+key+'&id=pQNKoy'
+    let api = 'https://nameless-mesa-60180.herokuapp.com/http://api.getsongbpm.com/song/?api_key='+key+'&id=pQNKoy'
   
     
     fetch(api)
@@ -54,7 +54,7 @@ function getFirstSong(){
         });
 }
 function getNextSong(song){
-    let api = 'https://thingproxy.freeboard.io/fetch/http://api.scrapestack.com/scrape?access_key=58904295e5b7e72be83d1d301385584d&url=http://api.getsongbpm.com/song/?api_key='+key+'&id='+song
+    let api = 'https://nameless-mesa-60180.herokuapp.com/http://api.getsongbpm.com/song/?api_key='+key+'&id='+song;
   
     
     fetch(api)
@@ -106,7 +106,7 @@ function displaySearch(){
 function search(){
     var title = textBox2.value
     title = title.replace(" ","+")
-    let api = "https://api.getsongbpm.com/search/?api_key=f11886fda303a0f198969af182c18730&type=song&lookup="+ title;
+    let api = "https://nameless-mesa-60180.herokuapp.com/https://api.getsongbpm.com/search/?api_key=f11886fda303a0f198969af182c18730&type=song&lookup="+ title;
   
     
     fetch(api)
