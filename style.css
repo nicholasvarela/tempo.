@@ -1,117 +1,254 @@
-*{
-    font-family: "Rimouski";
-    color: #383838;
+* {
+  font-family: "Rimouski";
+  color: #383838;
 }
 
-body{
-    background-color: white;
-    height: 100%;
-    width: 100%;
+body {
+  background-color: white;
+  height: 100%;
+  width: 100%;
 }
 
-.app-title p{
-    text-align: left;
-    padding: 15px;
-    font-style: bold;
-    margin: 0 auto;
-    font-size: 2.9em;
-    color:rgb(112, 112, 112);
-   
+.app-title p {
+  text-align: left;
+  padding: 15px;
+  font-style: bold;
+  margin: 0 auto;
+  font-size: 2.9em;
+  color: rgb(112, 112, 112);
+
 }
+
 .container {
-    text-align: center;
-    width: 80%;
-    height: 300px;
-    background: whitesmoke;
-    margin: auto;
-    padding: 10px;
-    border-radius: 25px;
-  }
+  text-align: center;
+  width: 80%;
+  height: 300px;
+  background: whitesmoke;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.two {
+  width: 20%;
+  height: 300px;
+  background: white;
+  float: left;
+  border-radius: 20px;
+}
+
+.one {
+
+  margin-left: 15%;
+  height: 300px;
+  background: whitesmoke;
+  border-radius: 20px;
+}
+
+
+.bpm {
+  text-align: center;
+  height: 60px;
+}
+
+.bpm p {
+  padding: 0;
+  margin: 0;
+  color: #293251;
+  font-size: 4em;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.bpm span {
+  color: #293251;
+  font-size: 0.5em;
+  padding: 10%
+}
+
+
+.songTitle p {
+  padding-top: 65%;
+  margin: 0;
+  color: #293251;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+.artistName p {
+  margin: 0;
+  padding: 10px;
+  color: #293251;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: bold;
+  font-size: 3rem;
+  color: darkred;
+
+}
+
+ .help{
+  padding-left: center;
+  padding-bottom: 50%;
+ 
+  background-color: lightgray;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20%;
+
   
-  .two {
-    width: 20%;
-    height: 300px;
-    background: white;
-    float: left;
-    border-radius: 20px;
-  }
-  
-  .one {
-      
-    margin-left: 15%;
-    height: 300px;
-    background: whitesmoke;
-    border-radius: 20px;
-  }
-
-
-.bpm{
-    text-align: center;
-    height:60px;
 }
 
-.bpm p{
-    padding: 0;
-    margin: 0;
-    color: #293251;
-    font-size: 4em;
-    text-align: center;
-    cursor: pointer;
+.modal-body {
+  padding: 10px 15px;
 }
 
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
 
-.bpm span{
-    color: #293251;
-    font-size: 0.5em;
-    padding: 10%
 }
 
-
-.songTitle p{
-   padding-top: 65%;
-    margin: 0;
-    color: #293251;
-    text-align: center;
-    font-size: 1.2em;
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
-
-.artistName p{
-    margin: 0;
-    padding: 10px;
-    color: #293251;
-    text-align: center;
-    font-size: 0.9em;
+.copyright {
+  text-emphasis: bold;
+  padding-right: 2.5%;
+  text-align: right;
+  color: gray;
+  font-family: Arial, sans-serif;
 }
 
-.copyright{
-
-    padding-left: 80%;
-    color: gray;
-    font-family: Arial, sans-serif;
-}
 input[type=text] {
-    padding: 10px;
-    height: 30px;
-    position: relative;
-    left: 0;
-    outline: none;
-    border: 1px solid #cdcdcd;
-    border-color: rgba(0, 0, 0, .15);
-    background-color: white;
-    font-size: 16px;
-    width: 50%;
+  padding: 10px;
+  height: 30px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+  background-color: white;
+  font-size: 16px;
+  width: 50%;
 
-  }
-  
-  .advancedSearchTextbox {
-    width: 526px;
-    margin-right: -4px;
-  }
-  .advancedSearchTextbox2 {
-    width: 526px;
-    margin-right: -4px;
-  }
-.space{ 
-    height: 10%;
+}
+
+.advancedSearchTextbox {
+  width: 526px;
+  margin-right: -4px;
+}
+
+.advancedSearchTextbox2 {
+  width: 526px;
+  margin-right: -4px;
+}
+
+.space {
+  height: 10%;
+}
+/* popup adapted from https://www.w3schools.com/howto/howto_js_popup.asp
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
