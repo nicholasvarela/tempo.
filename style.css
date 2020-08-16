@@ -132,7 +132,11 @@ body {
  .help{
   padding-left: center;
   padding-bottom: 50%;
- 
+  width: 100px;
+  height: 25px;
+  
+
+  
   background-color: lightgray;
   border: none;
   outline: none;

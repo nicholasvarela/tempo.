@@ -124,13 +124,8 @@ function displayNextSong() {
 }
 
 function displayTempo() {
-    tempElement.innerHTML = songData.song.bpm + ''
-
-    if (iconElement === null) {
-        iconElement.innerHTML = '';
-    }
-    console.log(songData.song.pic)
-
+    tempElement.innerHTML = songData.song.bpm + ' ' ;
+    //console.log(songData.song.pic
 }
 
 function displaySearch() {
@@ -140,6 +135,7 @@ function displaySearch() {
 }
 //search("bad");
 function search() {
+    console.log(" dd");
     var title = textBox2.value
     title = title.replace(" ", "+")
     let api = "https://nameless-mesa-60180.herokuapp.com/https://api.getsongbpm.com/search/?api_key=f11886fda303a0f198969af182c18730&type=song&lookup=" + title;
@@ -154,10 +150,13 @@ function search() {
         .then(function (data) {
             searchData.fullText.text = data.search;
             var btn = document.createElement("PARAGRAPH");
-            if (data.search[0].id != null)
-                searchResult.innerHTML = data.search[0].title + "//ID Number: " + data.search[0].id
+            if (data.search[0].id != null){
+               
             getNextSong(data.search[0].id)
-            textBox.innerHTML = data.search[0].id;
+            textBox.innerHTML = data.search[0].id;}
+            else{
+                alert("Invalid Song Name. Please Try Again.")
+            }
 
         })
         .then(function () {
