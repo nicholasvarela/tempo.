@@ -3,6 +3,11 @@ A simple way to see if a song is good or your running pace.
 
 Made with the getSongBPM API and custom HEROKU Proxy. 
 
+TODO: 
+Drop down with Song Selector 
+
+Notification of null request received 
+
 Change Log: 
 
 2/20/2020  Intital Upload of Working API
