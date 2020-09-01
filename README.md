@@ -1,14 +1,16 @@
+![](favicon.ico)
 # tempo.
-A simple way to see if a song is good or your running pace. 
+This project takes in a song and will tell you its tempo. Soon it will give you information on what pacing to run with the song. 
+## Access the live project at https://nicholasvarela.github.io/tempo./
 
-Made with the getSongBPM API and custom HEROKU Proxy. 
+![](coverImage.png)
 
-TODO: 
+## TODO: 
 Drop down with Song Selector 
 
-Notification of null request received 
+Fix Tempo suggestion 
 
-Change Log: 
+## Change Log: 
 
 2/20/2020  Intital Upload of Working API
 
@@ -17,3 +19,19 @@ Change Log:
 8/10/2020  Upload with introduction button
 
 8/15/2020  Fixed Merge Error
+
+9/1/2020   Added notification for unsuccessful search
+
+## Attributions 
+I am extremely greatful to these guides and tutorials. 
+
+Code Explained on Youtube 
+
+Run2R for the tempo pacing
+
+getsongbpm.com for the API with the song's bpm 
+
+CORS-Anywhere Heroku Proxy. Custom Implementation. 
+https://cors-anywhere.herokuapp.com/ 
+
+
