@@ -23,7 +23,7 @@ Fix Tempo suggestion
 9/1/2020   Added notification for unsuccessful search
 
 ## Attributions 
-I am extremely greatful to these guides and tutorials. 
+I am extremely grateful to these guides and tutorials. 
 
 Code Explained on Youtube 
 
