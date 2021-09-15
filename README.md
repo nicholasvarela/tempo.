@@ -1,7 +1,7 @@
 ![](favicon.ico)
 # tempo.
 This project takes in a song and will tell you its tempo. Soon it will give you information on what pacing to run with the song. 
-## Access the live project at https://nicholasvarela.github.io/tempo./
+
 
 ![Alt Text](https://media.giphy.com/media/fXhatr9XU7rPPr3QGu/giphy.gif)
 
